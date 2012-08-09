@@ -1,0 +1,34 @@
+<!--<%@ page contentType="text/html; charset=iso-8859-1" language="java" import="org.json.*,java.util.*;" errorPage="" %> -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+<title>Twitter Puzzle</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<link href='http://fonts.googleapis.com/css?family=Oleo+Script' rel='stylesheet' type='text/css'>
+<link href="css/bootstrap-responsive.min.css" rel="stylesheet" type="text/css" />
+<script src="bootstrap.min.js"></script>
+<script src="a.js"></script>
+</head>
+<body style="background-image:url(img/clouds.jpg)">
+   <div class="container">
+    <img src="img/twitter-bird-1.png" style="float:right;">
+	<div><br><br><br><br><br><br><br><br><br><br></div>
+      <div class="well" style="float:right;">
+       <h1><span id="header" style="font-family:'Oleo Script', Tahoma, cursive;"><center>Login</center></span></h1><br>
+	   <form id="process-twitter-handle" action="check.jsp" method="POST">
+        <center><input type="text" class="input-xlarge" placeholder="Twitter handle @" name="handle" value=""><center>
+      	<p><center><div id="inset"><input class="btn btn-primary btn-large" id="submit_button" type="submit" value="Generate Cloud"></div></center></p>
+        <input id="user_timeline" name="user_timeline" type="hidden">
+      </form>
+      </div>
+    </div>
+	<script type="text/javascript">
+  $(function(){
+    bindFormSubmit();
+  });
+</script>
+
+</body>
+</html>
