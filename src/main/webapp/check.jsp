@@ -42,7 +42,7 @@
 	%>
 <%
 /*
-Query used to fetch filtered data from user's twitter timeline
+URL used to fetch filtered data from user's twitter timeline
 http://api.twitter.com/1/statuses/user_timeline.json?suppress_response_codes&trim_user=true&include_entities=false&include_rts=true&exclude_replies=true&count=1000&callback=sendDataToServer&screen_name=name
 */
 if(request.getParameter("user_timeline").charAt(0)=='{')
